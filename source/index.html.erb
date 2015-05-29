@@ -1,10 +1,84 @@
----
-title: Le Wagon Middleman boilerplate
----
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <div class="container space" >
+    <!-- used to force the banner picture below the header -->
+  </div>
+
+
+  <div id="banner">
+    <h1>CODE MONITORING</h1>
+    <br>
+    <p>Turn your smart phone into a code monitoring tool</p>
+    <p>Make your efforts count..</p>
+    <br>
+    <a href="" class="btn btn-primary btn-lg">Send your photos</a>
+    <!-- find out more
+    http://ibfan.org/code-monitoring
+    http://www.ibfan-icdc.org/-->
+
+    <!-- <iframe width="300" height="250" src="https://www.youtube.com/embed/NxLEpE0q27w" frameborder="0" allowfullscreen></iframe> -->
+  </div>
+
+<body>
+  <div class="blue-bg">
+    <div class="container text-center" id="features">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="../images/paper.svg">
+            <h2>Pen and Paper</h2>
+            <p>Write your report with a pen <strong>on paper</strong></p>
+          </div>
+        </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <img src="../images/computer.svg">
+          <h2>Upload Reports</h2>
+          <p>Use Code Reporter to send reports from your computer, <strong>in real-time</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <img src="../images/analytics.svg">
+          <h2>Analytics</h2>
+          <p>Analyse, <strong>reports from your local area and all governmental responses</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <img src="../images/data.svg">
+          <h2>Archiving Reports</h2>
+          <p>Everything logged will be stored in the cloud, so that <strong>it's never lost</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Banner -->
+
+  <!-- Features -->
+
+  <!-- Map -->
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(21.9704573,96.0784428);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#146474"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#021019"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+

@@ -1,17 +1,26 @@
+.space {
+  height: 55px;
+  /*inherit the size of the header above*/
+  /*This is a blank space to force the picture into place.*/
+}
+
 #banner {
   height: 30px;
-  background-image: url(../images/Bottle.png) ;
-  color: offwhite;
-  padding: 150px 0;
+  background-image: url(../../images/bottle.jpg);
   background-size: cover;
-  height: 650px;
+  background-position: top right;
+  color: white;
+  padding: 300px 25px;
+
+  /*  background-position: 0 600px;*/
+  /*  height: 600px;*/
 }
 #banner h1 {
-  font-size: 50px;
+  font-size: 4vw ;
   color: white;
 }
 #banner p {
-  font-size: 25px;
+  font-size: 2vw;
   font-weight: 100;
-}/* code your banner design here */
+}
 
