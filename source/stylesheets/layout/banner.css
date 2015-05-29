@@ -1,0 +1,17 @@
+#banner {
+  height: 30px;
+  background-image: url(../images/Bottle.png) ;
+  color: offwhite;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+}
+#banner h1 {
+  font-size: 50px;
+  color: white;
+}
+#banner p {
+  font-size: 25px;
+  font-weight: 100;
+}/* code your banner design here */
+
