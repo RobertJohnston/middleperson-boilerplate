@@ -1,5 +1,6 @@
 @import url("banner.css");
 @import url("footer.css");
+@import url("animation_cheat_sheet.css");
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -23,4 +24,25 @@ h1, h2, h3 {
   background: #469AE0;
   color: white;
 }
+/* CSS for banner arrow*/
+#banner a {
+  font-size: 18px;
+  color: white;
+}
+
+#banner .scroll-btn {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* body is a tag above - don't use # before body*/
+/* banner is a class - use # before calling center on banner*/
+
+body .centered {
+  width: 100% ;
+  font-size: 300px;
+  text-align: center;
+}
+
+/* here I have 3 elements attempting to define CSS to scroll button*/
 
